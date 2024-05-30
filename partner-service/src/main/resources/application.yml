@@ -12,6 +12,25 @@ spring:
     defer-datasource-initialization: true
   h2:
     console.enabled: true
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092, localhost:9094
+      #key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: contract-put-info-events
+      properties:
+        spring.json.trusted.packages: "ru.sobse.parnterservice"
+    producer:
+      bootstrap-servers: localhost:9092, localhost:9094
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      properties:
+        delivery.timeout: 10000
+        linger.ms: 0
+        request.timeout.ms: 5000
+        enable.idepotence: true
+        max.in.flight.requests.per.connections: 5
 
 server:
   port: 0

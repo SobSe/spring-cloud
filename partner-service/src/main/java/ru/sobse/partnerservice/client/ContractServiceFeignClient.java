@@ -1,9 +1,9 @@
-package ru.sobse.users.client;
+package ru.sobse.partnerservice.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import ru.sobse.users.dto.ContractResponseDto;
+import ru.sobse.partnerservice.dto.ContractResponseDto;
 
 import java.util.List;
 

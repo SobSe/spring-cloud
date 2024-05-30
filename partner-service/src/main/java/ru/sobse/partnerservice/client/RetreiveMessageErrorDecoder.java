@@ -1,9 +1,9 @@
-package ru.sobse.users.client;
+package ru.sobse.partnerservice.client;
 
 import feign.Response;
 import feign.Util;
 import feign.codec.ErrorDecoder;
-import ru.sobse.users.exception.ContractsNotFoundException;
+import ru.sobse.partnerservice.exception.ContractsNotFoundException;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

@@ -1,4 +1,4 @@
-package ru.sobse.users.entity;
+package ru.sobse.partnerservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

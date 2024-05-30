@@ -1,6 +1,6 @@
-package ru.sobse.users.client;
+package ru.sobse.partnerservice.client;
 
-import ru.sobse.users.dto.ContractResponseDto;
+import ru.sobse.partnerservice.dto.ContractResponseDto;
 
 import java.util.List;
 

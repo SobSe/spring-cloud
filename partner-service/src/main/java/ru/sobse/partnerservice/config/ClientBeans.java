@@ -1,13 +1,12 @@
-package ru.sobse.users.config;
+package ru.sobse.partnerservice.config;
 
-import feign.Logger;
 import feign.codec.ErrorDecoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;
-import ru.sobse.users.client.ContractServiceClient;
-import ru.sobse.users.client.ContractServiceClientImpl;
-import ru.sobse.users.client.RetreiveMessageErrorDecoder;
+import ru.sobse.partnerservice.client.ContractServiceClient;
+import ru.sobse.partnerservice.client.ContractServiceClientImpl;
+import ru.sobse.partnerservice.client.RetreiveMessageErrorDecoder;
 
 @Configuration
 public class ClientBeans {

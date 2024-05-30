@@ -1,9 +1,9 @@
-package ru.sobse.users.client;
+package ru.sobse.partnerservice.client;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.client.RestClient;
-import ru.sobse.users.dto.ContractResponseDto;
+import ru.sobse.partnerservice.dto.ContractResponseDto;
 
 import java.util.List;
 
