@@ -78,7 +78,7 @@ public class KafkaConfig {
         config.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG,
                 env.getProperty("spring.kafka.producer.properties.request.timeout.ms"));
         config.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG,
-                env.getProperty("spring.kafka.producer.properties.enable.idepotence"));
+                env.getProperty("spring.kafka.producer.properties.enable.idempotence"));
         config.put(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION,
                 env.getProperty("spring.kafka.producer.properties.max.in.flight.requests.per.connections"));
         return config;
